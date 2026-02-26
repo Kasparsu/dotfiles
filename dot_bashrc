@@ -1,1 +1,2 @@
 alias npm=bun
+eval "$(starship init bash)"
