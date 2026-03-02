@@ -36,7 +36,7 @@ style_root = "bg:#dc143c fg:#000000"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#000000 fg:#dc143c"
+style = "bg:#000001 fg:#dc143c"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -126,5 +126,5 @@ format = '[ $symbol ($version) ]($style)'
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#000000 fg:#dc143c"
+style = "bg:#000001 fg:#dc143c"
 format = '[ $time ]($style)'
