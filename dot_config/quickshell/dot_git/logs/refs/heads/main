@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 58cf1dafa6e156c4257650e4e6295896b91a9ec0 Kaspar Martin Suursalu <kasparsu@gmail.com> 1771825193 +0200	commit (initial): init commit
+58cf1dafa6e156c4257650e4e6295896b91a9ec0 9d433a0d38f13216100811547f7d16c93bbe769a Kaspar Martin Suursalu <kasparsu@gmail.com> 1771855878 +0200	pull --tags origin main: Fast-forward
+9d433a0d38f13216100811547f7d16c93bbe769a 648aaf89df2bffb7360c5599d7a1c3893af74367 Kaspar Martin Suursalu <kasparsu@gmail.com> 1771904156 +0200	commit: Fix MprisWidget updating
+648aaf89df2bffb7360c5599d7a1c3893af74367 0f46c4b139b925d7486bebbd6a8fe57bf7fa7098 Kaspar Martin Suursalu <kasparsu@gmail.com> 1771909935 +0200	pull --tags origin main: Fast-forward
+0f46c4b139b925d7486bebbd6a8fe57bf7fa7098 15343b7bd40743e9821a0f3988202274d9302be3 Kaspar Martin Suursalu <kasparsu@gmail.com> 1771910746 +0200	commit: Disable Battery Widget if no battery
+15343b7bd40743e9821a0f3988202274d9302be3 fde27f4ed6bd919d74bf7f718a7612c461e285bd Kaspar Martin Suursalu <kasparsu@gmail.com> 1771910804 +0200	commit: Remove debug print from BatteryWidget
+fde27f4ed6bd919d74bf7f718a7612c461e285bd cace544429be2fe34e0f6a4bb25dc04adcb43875 Kaspar Martin Suursalu <kasparsu@gmail.com> 1771995444 +0200	commit: Add network widget
+cace544429be2fe34e0f6a4bb25dc04adcb43875 f4cd69d7cafe64e87ecb771146c56d5f8decc425 Kaspar Martin Suursalu <kasparsu@gmail.com> 1771995480 +0200	commit: Separate Mpris and Volume widget
+f4cd69d7cafe64e87ecb771146c56d5f8decc425 ac3abe2c0b36242cdb653c7f5c1fef0b8d3f2355 Kaspar Martin Suursalu <kasparsu@gmail.com> 1771995489 +0200	commit: Update icon size
+ac3abe2c0b36242cdb653c7f5c1fef0b8d3f2355 326fa4a8f3edf00faef38ec27e0664cddc81aa82 Kaspar Martin Suursalu <kasparsu@gmail.com> 1772086173 +0200	commit: Hide mpris widget when nothing is playing
+326fa4a8f3edf00faef38ec27e0664cddc81aa82 43e7eb3db1dc16c69e9c926a4d2e241e91a896e4 Kaspar Martin Suursalu <kasparsu@gmail.com> 1772101781 +0200	pull --tags origin main: Fast-forward
