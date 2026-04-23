@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# All RGB devices → solid red.
+
+openrgb --noautoconnect --device 0 --mode direct --color FF0000 >/dev/null 2>&1
+openrgb --noautoconnect --device 1 --mode direct --color FF0000 >/dev/null 2>&1
+openrgb --noautoconnect --device 2 --mode direct --color FF0000 >/dev/null 2>&1
+
+rivalcfg --no-save -l 100 \
+    -C FF0000 -c FF0000 \
+    --z2 FF0000 --z3 FF0000 --z4 FF0000 --z5 FF0000 \
+    --z6 FF0000 --z7 FF0000 --z8 FF0000 --z9 FF0000 \
+    >/dev/null 2>&1
+
+exit 0

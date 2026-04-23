@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# All RGB devices → off.
+
+openrgb --noautoconnect --device 0 --mode direct --color 000000 >/dev/null 2>&1
+openrgb --noautoconnect --device 1 --mode off >/dev/null 2>&1
+openrgb --noautoconnect --device 2 --mode off >/dev/null 2>&1
+
+rivalcfg --no-save -l 0 >/dev/null 2>&1
+
+exit 0

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# SUDO_ASKPASS helper — prompt for a password via rofi.
+exec rofi -dmenu -password -p "${1:-sudo}" < /dev/null
