@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
-# All RGB devices → solid red.
+# All RGB devices → solid red. Skips tools that aren't installed.
 
-openrgb --noautoconnect --device 0 --mode direct --color FF0000 >/dev/null 2>&1
-openrgb --noautoconnect --device 1 --mode direct --color FF0000 >/dev/null 2>&1
-openrgb --noautoconnect --device 2 --mode direct --color FF0000 >/dev/null 2>&1
+if command -v openrgb >/dev/null 2>&1; then
+    openrgb --noautoconnect --device 0 --mode direct --color FF0000 >/dev/null 2>&1
+    openrgb --noautoconnect --device 1 --mode direct --color FF0000 >/dev/null 2>&1
+    openrgb --noautoconnect --device 2 --mode direct --color FF0000 >/dev/null 2>&1
+fi
 
-rivalcfg --no-save -l 100 \
-    -C FF0000 -c FF0000 \
-    --z2 FF0000 --z3 FF0000 --z4 FF0000 --z5 FF0000 \
-    --z6 FF0000 --z7 FF0000 --z8 FF0000 --z9 FF0000 \
-    >/dev/null 2>&1
+if command -v rivalcfg >/dev/null 2>&1; then
+    rivalcfg --no-save -l 100 \
+        -C FF0000 -c FF0000 \
+        --z2 FF0000 --z3 FF0000 --z4 FF0000 --z5 FF0000 \
+        --z6 FF0000 --z7 FF0000 --z8 FF0000 --z9 FF0000 \
+        >/dev/null 2>&1
+fi
 
 exit 0

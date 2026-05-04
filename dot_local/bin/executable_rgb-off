@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
-# All RGB devices → off.
+# All RGB devices → off. Skips tools that aren't installed.
 
-openrgb --noautoconnect --device 0 --mode direct --color 000000 >/dev/null 2>&1
-openrgb --noautoconnect --device 1 --mode off >/dev/null 2>&1
-openrgb --noautoconnect --device 2 --mode off >/dev/null 2>&1
+if command -v openrgb >/dev/null 2>&1; then
+    openrgb --noautoconnect --device 0 --mode direct --color 000000 >/dev/null 2>&1
+    openrgb --noautoconnect --device 1 --mode off >/dev/null 2>&1
+    openrgb --noautoconnect --device 2 --mode off >/dev/null 2>&1
+fi
 
-rivalcfg --no-save -l 0 >/dev/null 2>&1
+if command -v rivalcfg >/dev/null 2>&1; then
+    rivalcfg --no-save -l 0 >/dev/null 2>&1
+fi
 
 exit 0
